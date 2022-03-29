@@ -1,10 +1,10 @@
 import React from "react";
-import "../App.css"
+import Style from "../Movies.module.css"
 
 const Movies = (props) => {
     return(
-        <div class="divbox">
-            <ul class="NoPadding">
+        <div className={Style.divbox}>
+            <ul>
                 <h4>{props.elem.title}</h4>                
                 {props.elem.director}
                 <br></br>

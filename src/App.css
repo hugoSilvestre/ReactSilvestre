@@ -1,6 +1,11 @@
 .App {
+  background-image: url(https://wallpaperaccess.com/full/3199302.jpg);
   text-align: center;
 }
+ h2{
+   margin: 0px;
+   color:white;
+  }
 
 .App-logo {
   height: 40vmin;
@@ -37,11 +42,3 @@
   }
 }
 
-/*MOI*/
-.divbox{
-  background-color: #8edfd9; margin: 0 auto; width: 300px; border-radius: 20px; box-shadow: 10px 5px 5px #909090de;
-}
-
-.NoPadding{
-  padding: 0px;
-}

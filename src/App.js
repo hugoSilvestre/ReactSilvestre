@@ -4,6 +4,7 @@ import {useEffect, useState} from "react";
 import Test from "./Components/Test";
 import Movies from "./Components/Movies";
 
+
 function App() {
  // let myVar ='Hello World';
 const [myVar,setMyVar] = useState('YouFilm Streaming');
@@ -48,7 +49,7 @@ const [myMovie, setMovies] = useState([]);
 
   return (
       <div className="App">
-        <h2>{myVar}</h2>
+        <h2 className="NoMargin">{myVar}</h2>
           <Test myProp='hello' updater={ChildToParentUpdater} />
           {
               myMovie.map((element) => {
