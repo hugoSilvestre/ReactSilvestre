@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+/*MOI*/
+.divbox{
+  background-color: #8edfd9; margin: 0 auto; width: 300px; border-radius: 20px; box-shadow: 10px 5px 5px #909090de;
+}
+
+.NoPadding{
+  padding: 0px;
+}

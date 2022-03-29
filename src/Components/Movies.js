@@ -1,12 +1,11 @@
 import React from "react";
+import "../App.css"
 
 const Movies = (props) => {
     return(
-        <div>
-            <h1>Mes Films</h1>
-            <ul>
-                <h4>{props.elem.title}</h4>
-                <br></br>
+        <div class="divbox">
+            <ul class="NoPadding">
+                <h4>{props.elem.title}</h4>                
                 {props.elem.director}
                 <br></br>
                 {props.elem.producer}

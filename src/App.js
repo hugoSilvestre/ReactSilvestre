@@ -6,7 +6,7 @@ import Movies from "./Components/Movies";
 
 function App() {
  // let myVar ='Hello World';
-const [myVar,setMyVar] = useState('Hello World');
+const [myVar,setMyVar] = useState('YouFilm Streaming');
 const [myMovie, setMovies] = useState([]);
 
 
