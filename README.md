@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+JSX
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+const myObject = {
+toto: 'toto'
+}
 
-## Available Scripts
+const { toto } myObject; 
 
-In the project directory, you can run:
+const myArray = [1, 2, 4];
 
-### `npm start`
+const[one, tow, three] = myArray;
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+const myHttpReponse = {...}
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+const {price, ...rest} = myHttpReponse
 
-### `npm test`
+Consignes du projet
+- Full hook
+- Documentation personelle, sur les notions découverte cette semaines
+- Documentation Projet commune (Clair et consit)
+- Organisaton 'feature based' de la projet
+- Au minimum un petit workflow git présenté brièvement
+- Des appels API...
+- Des sideEffects..
+- Un store
+- React Router
+- Des composants réutilisables
+- Un minimum Jolis. (Mettre du bleu car vu le diapo il aime le bleu)
+- Signup/login avec store et routeur guard*
+- Un Hook custom*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Contraintes du groupe 4 :
+- BluePrint
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A partir de l'appel API (fetch), créer un tableu, le parcourir et afficher de manière dynamique un composant Movie (qui présentera chaque film à l'aide de props passée depuis le tableau Movies):
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-Récupérer les données de l'appel
+-les stocker dans un state
+-Creer un composant movie qui permet l'affichage des infos du film (ce attend des props)
+-Afficher dynaiqueent les films sur la vue...
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+//////Important
+Hook = permet de s'accrocher a des composant ComponentDidMount.
+Vue est composé de composents
+La seule limite du nombre de composants maximum dans une page c'est la capacité de le RAM de l'ordinateur.
 
-### `npm run eject`
+Les handler sont passer en référence
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+le hook UseState permet d'actualiser la vue dynamiquement
